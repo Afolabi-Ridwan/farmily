@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://use.typekit.net/lvm7teo.css");
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,5 +17,129 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "poppins";
+}
+
+.custom-img {
+  max-width: 250px !important;
+  height: 250px !important;
+  object-fit: cover;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.product-img{
+  width: 120px !important;
+  height: 100px !important;
+  object-fit: contain;
+}
+
+.border-fade {
+  border: 1px solid rgba(117, 167, 67, 0.9);
+}
+
+.border-grey-fade {
+  box-shadow: 0px 0px 1px 1px rgb(128, 128, 128, 0.4);
+  border-radius: 10px;
+}
+
+.border-right-fade {
+  border-right: 1px solid rgba(117, 167, 67, 0.9);
+}
+
+.border-round-fade {
+  border: 1px solid rgba(117, 167, 67, 0.9);
+  border-radius: 100%;
+  padding: 5px 0;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.input {
+  background-color: rgba(234, 145, 85, 0.3);
+  padding: 0 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mobile-custom-img {
+  max-width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.border-bottom-fade {
+  border-bottom: none;
+}
+
+.addToCartIcon {
+  border-radius: 50%;
+  padding: 3px;
+  color: white;
+}
+
+.a{
+  display: flex;
+  align-items: start;
+}
+
+.orange-bg{
+  background-color: rgba(209, 112, 0, 0.4);
+}
+.orange-col{
+  color: rgb(209, 42, 0);
+}
+
+.grey-bg{
+  background-color: rgba(226, 226, 226, 0.4);
+  width: 100%;
+  padding: 20px;
+}
+
+.green-col{
+  color: rgb(73, 149, 93);
+}
+
+.text-area{
+  border: solid 2px white;
+  width: 100%;
+  background-color: rgba(226, 226, 226, 0.4);
+  color: black;
+  border-radius: 10px;
+  height: 100px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: large;
+}
+@media (max-width: 768px) {
+  .custom-img {
+    max-width: 100px !important;
+    height: 100px !important;
+    object-fit: contain;
+  }
+
+  .border-right-fade {
+    border-right: none;
+  }
+
+  .border-bottom-fade {
+    border-bottom: 1px solid rgba(117, 167, 67, 0.5);
+  }
+
+  
+}
+
+@media (min-width: 768px) {
+  .category-img{
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: contain;
+  }
 }
